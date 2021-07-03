@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prediction ML</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='register.css')}}">
+</head>
+<body>
+<form action="/regCustomer" method="POST">
+<div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>Full Name</label>
+          <input type="text" class="input" name="pname" id="pname" required>
+       </div>  
+        <div class="inputfield">
+          <label>Aadhaar Number</label>
+          <input type="text" class="input" name="aadno" id="aadno" required>
+       </div>  
+       <div class="inputfield">
+          <label>Old Age Home Name</label>
+          <input type="text" class="input" name="cname" id="cname">
+       </div>  
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input" name="pno" id="pno" required>
+       </div>
+        <div class="inputfield">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select name="gen" id="gen">
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+       </div> 
+        <div class="inputfield">
+          <label>Age</label>
+          <input type="text" class="input" name="age" id="age">
+       </div> 
+      <div class="inputfield">
+          <label>Weight</label>
+          <input type="text" class="input" name="weight" id="weight"required>
+       </div> 
+      
+      <div class="inputfield">
+        <input type="submit" value="Register" class="btn">
+      </div>
+	  <span style="color:darkgreen">{{rstatus}}</span> <br/> <br/>
+	  <p style="float:right"><h5>If Registered, then <a href="/">Login</a></h5></p>
+    </div>
+</div>	
+	</form>
+	
+</body>
+</html>

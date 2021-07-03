@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prediction ML</title>
+<link rel="stylesheet" href="{{url_for('static',filename='data.css')}}">
+<style>
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+	<form action="/" method='POST'>
+		<input type="submit" style="float:right;" value="Logout" />
+	</form>
+		<div class="title">
+			Patient Diagnosis Data
+		</div>
+		<table>
+			<tr>
+				<td>Disease Detected:</td>
+				<td class="tab" style="color:red;">{{disease_prediction}}</td>
+			</tr>
+			<tr>
+				<td>Patient Name:</td>
+				<td class="tab" style="color:red;">{{pname}}</td>
+			</tr>
+			<tr>
+				<td>Aadhaar No: </td>
+				<td class="tab" style="color:red;">{{aadno}}</td>
+			</tr>
+			<tr>
+				<td>City Name: </td>
+				<td class="tab" style="color:red;">{{cname}}</td>
+			</tr>
+			<tr>
+				<td>Phone No: </td>
+				<td class="tab" style="color:red;">{{pno}}</td>
+			</tr>
+			<tr>
+				<td>Gender: </td>
+				<td class="tab" style="color:red;">{{gen}}</td>
+			</tr>
+			<tr>
+				<td>Age: </td>
+				<td class="tab" style="color:red;">{{age}}</td>
+			</tr>
+			<tr>
+				<td>Weight: </td>
+				<td class="tab" style="color:red;">{{weight}}</td>
+			</tr>
+			<tr>
+				<td>Current Remarks: </td>
+				<td class="tab" style="color:red;">{{previous_remarks}}</td>
+			</tr>
+			<tr>
+				<td>Current Mode: </td>
+				<td class="tab" style="color:red;">{{mode}}</td>
+			</tr>
+		
+		</table>
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prediction ML</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='first.css')}}">
+</head>
+<body>
+<form action="/login_user" method="POST">
+<div class="wrapper">
+    <div class="title">
+      Welcome Back!!!!
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>Name</label>
+          <input type="text" class="input" name="pname" id="pname" required>
+       </div>  
+        <div class="inputfield">
+          <label>Aadhaar Number</label>
+          <input type="text" class="input" name="aadno" id="aadno" required>
+       </div>  
+      <div class="inputfield">
+        <input type="submit" value="Login" class="btn">
+      </div>
+      <div class="input">
+	  <span style="color:darkgreen">{{lstatus}}</span> <br/>
+      <br><p><h5>Haven't Registered?? Get <a href="/register">Register</a></h5></p>
+      <div class="terms"><p><h5>Need Past Activity?? Get <a href="/reports">Reports</a></h5></p></div>
+	  
+    </div>
+  </div>
+</div>	
+</form>
+</body>
+</html>

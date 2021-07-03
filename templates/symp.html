@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prediction ML</title>
+<link rel="stylesheet" href="{{url_for('static',filename='symp.css')}}">
+</head>
+<body>
+<form action="/predict" method="POST">
+<div class="wrapper">
+<div class="title">
+Data Collection
+</div>
+<span style="text-align:center; color:darkgreen;">{{remarks}}</span>
+<div class="form">
+<div class="inputfield">
+<span>Symptom 1</span>
+<select name="s1" id="s1">
+<option hidden>Select the Symptom</option>
+<option value="itching">itching</option>
+<option value="skin_rash">skin_rash</option>
+<option value="nodal_skin_eruptions">nodal_skin_eruptions</option>
+<option value="continuous_sneezing">continuous_sneezing</option>
+<option value="shivering">shivering</option>
+<option value="chills">chills</option>
+</select>
+</div>
+<div class="inputfield">
+<span>Symptom 2</span>
+<select name="s2" id="s2">
+<option hidden>Select the Symptom</option>
+<option value="joint_pain">joint_pain</option>
+<option value="stomach_pain">stomach_pain</option>
+<option value="acidity">acidity</option>
+<option value="ulcers_on_tongue">ulcers_on_tongue</option>
+<option value="muscle_wasting">muscle_wasting</option>
+<option value="vomiting">vomiting</option>
+</select>
+</div>
+<div class="inputfield">
+<span>Symptom 3</span>
+<select name="s3" id="s3">
+<option hidden>Select the Symptom</option>
+<option value="burning_micturition">burning_micturition</option>
+<option value="spotting_urination">spotting_urination</option>
+<option value="fatigue">fatigue</option>
+<option value="weight_gain">weight_gain</option>
+<option value="anxiety">anxiety</option>
+<option value="cold_hands_and_feets">cold_hands_and_feets</option>
+</select>
+</div>
+<div class="inputfield">
+<span>Symptom 4</span>
+<select name="s4" id="s4">
+<option hidden>Select the Symptom</option>
+<option value="mood_swings">mood_swings</option>
+<option value="weight_loss">weight_loss</option>
+<option value="restlessness">restlessness</option>
+<option value="lethargy">lethargy</option>
+<option value="patches_in_throat">patches_in_throat</option>
+<option value="irregular_sugar_level">irregular_sugar_level</option>
+</select>
+</div>
+<div class="inputfield">
+<input type="submit" value="Predict" class="btn">
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>

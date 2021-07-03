@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: #fec107;
+  padding: 0 10px;
+  margin-top: 10%;
+}
+.wrapper{
+  width: 85%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+  margin-top: 5%;
+  height: 600px;
+}
+
+.wrapper .form{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.wrapper .form .inputfield {
+  margin-bottom: 30px;
+  float: left;
+  padding-right: 80px;
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+
+.wrapper .form .inputfield span{
+   color: #757575;
+   margin-right: 10px;
+  font-size: 18px;
+}
+
+.wrapper .form .inputfield select{
+  padding: 5px 0 8px 0;
+  font-size: 85%;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 200%;
+  padding: 8px 10px;
+  margin-top: 20%;
+  transform: translate(170%,-10%); 
+  font-size: 18px; 
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #ffd658;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}

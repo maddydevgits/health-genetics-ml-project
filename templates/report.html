@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prediction ML</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="{{url_for('static',filename='report.css')}}">
+</head>
+<body>
+	<div class="wrapper">
+	<form action="/" method='POST'>
+		<input type="submit" style="float:right;" value="Logout" />
+	</form>
+		<div class="title">
+			Reports
+		</div>
+		
+		<table class="table table-bordered">
+		<tr>
+			<th>Patient Name</th>
+			<th>Aadhaar No</th>
+			<th>City Name</th>
+			<th>Phone No</th>
+			<th>Gender</th>
+			<th>Age</th>
+			<th>Weight</th>
+			<th>Remarks</th>
+			<th>Mode</th>
+		</tr>
+		{% for user in users %}
+			<tr>
+				<td>{{ user[1] }}</td>
+				<td>{{ user[2] }}</td>
+				<td>{{ user[3] }}</td>
+				<td>{{ user[4] }}</td>
+				<td>{{ user[5] }}</td>
+				<td>{{ user[6] }}</td>
+				<td>{{ user[7] }}</td>
+				<td>{{ user[8] }}</td>
+				<td>{{ user[9] }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+
+		
+		
+	</div>
+
+</body>
+</html>
